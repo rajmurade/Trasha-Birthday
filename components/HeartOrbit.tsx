@@ -22,12 +22,18 @@ export function HeartOrbit({ hearts, openedHearts, onOpenNode }: HeartOrbitProps
     if (typeof window === "undefined") return;
 
     const handleResize = () => {
-      if (window.innerWidth < 640) {
-        setRadius(110); 
-      } else if (window.innerWidth < 1024) {
-        setRadius(135);
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      // Calculate a highly fluid, responsive radius that fits any screen size comfortably
+      if (width < 380 || height < 600) {
+        setRadius(85); // Ultra-compact for small phones or landscape mode
+      } else if (width < 640) {
+        setRadius(105); // Ergonomic spacing for standard mobile devices
+      } else if (width < 1024) {
+        setRadius(135); // Spacious for tablets
       } else {
-        setRadius(165); 
+        setRadius(165); // Full display grandeur for desktops and larger screens
       }
     };
 
@@ -37,7 +43,8 @@ export function HeartOrbit({ hearts, openedHearts, onOpenNode }: HeartOrbitProps
   }, []);
 
   return (
-    <div className="absolute inset-0 z-10 flex items-center justify-center">
+    <div className="absolute inset-0 pointer-events-none z-10 flex items-center justify-center">
+      {/* Background dashed orbit guide line */}
       <div
         className="absolute rounded-full border border-dashed border-garden-glowPrimary/10 pointer-events-none transition-all duration-300"
         style={{
@@ -47,7 +54,8 @@ export function HeartOrbit({ hearts, openedHearts, onOpenNode }: HeartOrbitProps
       />
 
       {hearts.map((heart, index) => {
-        const angle = (360 / hearts.length) * index - 90; 
+        // Distribute the hearts evenly
+        const angle = (360 / hearts.length) * index - 90;
         const isOpened = openedHearts.includes(heart.id);
 
         return (
