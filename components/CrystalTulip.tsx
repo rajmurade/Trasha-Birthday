@@ -19,15 +19,20 @@ export function CrystalTulip({ isUnlocked, bloomProgress, onClick, state }: Crys
   return (
     <div
       ref={containerRef}
-      className="relative flex flex-col items-center justify-center select-none"
+      // The parent wrapper is completely transparent to pointer-events so it NEVER blocks the surrounding hearts
+      className="relative flex flex-col items-center justify-center select-none pointer-events-none"
       style={{
-        zIndex: 30, // Elevated z-index to guarantee it sits above the background orbit paths
+        zIndex: canBeClicked ? 40 : 5, // Lower z-index when locked so hearts (z-20) are easily clickable
       }}
     >
-      {/* Interactive overlay click target with clear bounds */}
+      {/* 
+        This is the actual physical hit-box for clicking the flower.
+        It is ONLY active (pointer-events-auto) once all 6 hearts have been opened.
+        When locked, it is pointer-events-none so mouse clicks pass right through it.
+      */}
       <div
-        className={`absolute w-36 h-48 rounded-full z-40 transition-all duration-300 ${
-          canBeClicked ? "cursor-pointer pointer-events-auto" : "pointer-events-none"
+        className={`absolute w-32 h-44 rounded-full z-50 transition-all duration-300 ${
+          canBeClicked ? "pointer-events-auto cursor-pointer" : "pointer-events-none"
         }`}
         onClick={(e) => {
           if (canBeClicked) {
@@ -51,7 +56,7 @@ export function CrystalTulip({ isUnlocked, bloomProgress, onClick, state }: Crys
 
       {/* Crystal glow background behind the tulip */}
       <motion.div
-        className="absolute w-52 h-52 rounded-full -z-10 pointer-events-none"
+        className="absolute w-44 h-44 rounded-full -z-10 pointer-events-none"
         style={{
           background: "radial-gradient(circle, rgba(255,179,209,0.35) 0%, rgba(255,214,231,0) 70%)",
         }}
