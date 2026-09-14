@@ -42,7 +42,7 @@ export function PetalRain() {
       petals.push({
         x: Math.random() * width,
         y: Math.random() * height - height,
-        r: Math.random() * 8 + 6, 
+        r: Math.random() * 8 + 6,
         d: Math.random() + 0.5,
         opacity: Math.random() * 0.6 + 0.35,
         rotation: Math.random() * 360,
@@ -64,7 +64,7 @@ export function PetalRain() {
       ctx.translate(x, y);
       ctx.rotate((rotation * Math.PI) / 180);
       ctx.beginPath();
-      
+
       ctx.moveTo(0, 0);
       ctx.quadraticCurveTo(-r / 1.5, -r / 1.5, -r, 0);
       ctx.quadraticCurveTo(-r / 1.5, r / 1.5, 0, r);

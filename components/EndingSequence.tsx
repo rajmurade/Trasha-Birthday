@@ -8,11 +8,11 @@ export function EndingSequence() {
 
   useEffect(() => {
     const timer1 = setTimeout(() => {
-      setStep(1); 
+      setStep(1);
     }, 1500);
 
     const timer2 = setTimeout(() => {
-      setStep(2); 
+      setStep(2);
     }, 6000);
 
     return () => {
@@ -57,7 +57,7 @@ export function EndingSequence() {
               <h1 className="text-4xl sm:text-6xl font-serif font-bold text-white tracking-wide text-glow-strong leading-tight">
                 Happy Birthday, <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-garden-glowPrimary via-garden-accent to-garden-glowSecondary">
-                  Samiksha
+                  Trasha
                 </span>
               </h1>
             </div>
@@ -72,7 +72,7 @@ export function EndingSequence() {
               transition={{ delay: 2.5, duration: 1 }}
               className="pt-10 text-[10px] tracking-widest text-garden-accent/40 font-serif"
             >
-              designed with endless love &bull; Raj
+              designed with endless love &bull; Rishi
             </motion.div>
           </motion.div>
         )}

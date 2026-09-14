@@ -10,7 +10,7 @@ FILES_MAP = {}
 # 1. package.json
 # ----------------------------------------------------
 FILES_MAP["package.json"] = """{
-  "name": "samiksha-birthday-garden",
+  "name": "Trasha-birthday-garden",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -208,8 +208,8 @@ FILES_MAP["app/layout.tsx"] = """import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "A Moonlight Garden for Samiksha",
-  description: "A magical interactive cinematic experience created with love for Samiksha's birthday.",
+  title: "A Moonlight Garden for Trasha",
+  description: "A magical interactive cinematic experience created with love for Trasha's birthday.",
 };
 
 export default function RootLayout({
@@ -660,7 +660,7 @@ export function StarField() {
       };
     };
 
-    const rng = seedRandom("samiksha-birthday-night-garden");
+    const rng = seedRandom("Trasha-birthday-night-garden");
 
     for (let i = 0; i < 140; i++) {
       starList.push({
@@ -748,7 +748,7 @@ export function ParticleLayer() {
       };
     };
 
-    const rng = seedRandom("samiksha-crystal-garden-dust");
+    const rng = seedRandom("Trasha-crystal-garden-dust");
 
     for (let i = 0; i < 45; i++) {
       const startX = rng() * 100;
@@ -1247,7 +1247,7 @@ export function HeartModal({ isOpen, onClose, title, text }: HeartModalProps) {
             <div className="flex items-center gap-2 mb-4 text-garden-glowPrimary">
               <Sparkles className="w-5 h-5" />
               <span className="text-[10px] tracking-[0.25em] uppercase font-sans font-medium">
-                Samiksha's Dream Garden
+                Trasha's Dream Garden
               </span>
             </div>
 
@@ -1589,7 +1589,7 @@ export function LetterReveal({ onClose }: LetterRevealProps) {
           className="max-h-[60vh] overflow-y-auto pr-4 text-garden-text space-y-6 md:space-y-7 text-sm md:text-base leading-relaxed font-serif tracking-wide select-text"
         >
           <h2 className="reveal-p text-xl md:text-2xl font-semibold text-white tracking-wide border-b border-white/10 pb-4">
-            For Samiksha,
+            For Trasha,
           </h2>
 
           <p className="reveal-p text-garden-accent">
@@ -1648,7 +1648,7 @@ export function LetterReveal({ onClose }: LetterRevealProps) {
           </p>
 
           <p className="reveal-p text-xl font-medium pt-4 text-white">
-            Happy Birthday, Samiksha.
+            Happy Birthday, Trasha.
           </p>
 
           <div className="reveal-p pt-4 border-t border-white/10 flex flex-col items-end">
@@ -1865,7 +1865,7 @@ export function EndingSequence() {
               <h1 className="text-4xl sm:text-6xl font-serif font-bold text-white tracking-wide text-glow-strong leading-tight">
                 Happy Birthday, <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-garden-glowPrimary via-garden-accent to-garden-glowSecondary">
-                  Samiksha
+                  Trasha
                 </span>
               </h1>
             </div>
@@ -2001,7 +2001,7 @@ export default function Home() {
                 Welcome to
               </h2>
               <h1 className="text-3xl sm:text-4xl font-serif text-white tracking-wide font-medium leading-tight">
-                Samiksha's <br />
+                Trasha's <br />
                 Moonlit Garden
               </h1>
               <p className="text-xs sm:text-sm text-garden-accent/80 leading-relaxed font-serif italic max-w-xs mx-auto">
@@ -2028,7 +2028,7 @@ export default function Home() {
             className="w-full flex flex-col items-center text-center mt-4 pointer-events-none z-10"
           >
             <h1 className="text-2xl sm:text-3xl font-serif text-white tracking-wide font-medium leading-normal text-glow">
-              Samiksha's Garden
+              Trasha's Garden
             </h1>
             <p className="text-[10px] tracking-[0.22em] uppercase text-garden-accent/70 mt-1">
               Reveal the secret stars to find her flower
@@ -2123,8 +2123,8 @@ def main():
         encoding="utf-8"
     )
 
-    # Compress the output files automatically into samiksha-birthday.zip
-    zip_filename = "samiksha-birthday.zip"
+    # Compress the output files automatically into Trasha-birthday.zip
+    zip_filename = "Trasha-birthday.zip"
     print(f"[*] Packaging project files into: {zip_filename}")
     
     with zipfile.ZipFile(zip_filename, "w", zipfile.ZIP_DEFLATED) as zf:

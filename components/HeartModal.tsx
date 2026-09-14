@@ -44,7 +44,7 @@ export function HeartModal({ isOpen, onClose, title, text }: HeartModalProps) {
             <div className="flex items-center gap-2 mb-4 text-garden-glowPrimary">
               <Sparkles className="w-5 h-5" />
               <span className="text-[10px] tracking-[0.25em] uppercase font-sans font-medium">
-                Samiksha's Dream Garden
+                Trasha's Dream Garden
               </span>
             </div>
 

@@ -31,7 +31,7 @@ export function ParticleLayer() {
       };
     };
 
-    const rng = seedRandom("samiksha-crystal-garden-dust");
+    const rng = seedRandom("trasha-crystal-garden-dust");
 
     for (let i = 0; i < 45; i++) {
       const startX = rng() * 100;
@@ -45,9 +45,9 @@ export function ParticleLayer() {
         startY,
         endX,
         endY,
-        size: rng() * 3 + 2, 
-        duration: rng() * 25 + 20, 
-        delay: rng() * -20, 
+        size: rng() * 3 + 2,
+        duration: rng() * 25 + 20,
+        delay: rng() * -20,
       });
     }
     return list;

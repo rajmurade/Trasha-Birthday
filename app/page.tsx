@@ -111,7 +111,7 @@ export default function Home() {
                 Welcome to
               </h2>
               <h1 className="text-3xl sm:text-4xl font-serif text-white tracking-wide font-medium leading-tight">
-                Samiksha's <br />
+                Trasha's <br />
                 Moonlit Garden
               </h1>
               <p className="text-xs sm:text-sm text-garden-accent/80 leading-relaxed font-serif italic max-w-xs mx-auto">
@@ -134,7 +134,7 @@ export default function Home() {
         <motion.div
           className="absolute inset-0 w-full h-full flex flex-col items-center justify-between p-6 sm:p-8"
           initial={{ opacity: 1 }}
-          animate={{ 
+          animate={{
             opacity: isMainInterfaceVisible ? 1 : 0,
             pointerEvents: bloomState === "ready" ? "auto" : "none"
           }}
@@ -143,7 +143,7 @@ export default function Home() {
           {/* Top Header */}
           <header className="w-full flex flex-col items-center text-center mt-4 pointer-events-none z-10">
             <h1 className="text-2xl sm:text-3xl font-serif text-white tracking-wide font-medium leading-normal text-glow">
-              Samiksha's Garden
+              Trasha's Garden
             </h1>
             <p className="text-[10px] tracking-[0.22em] uppercase text-garden-accent/70 mt-1">
               Reveal the secret stars to find her flower

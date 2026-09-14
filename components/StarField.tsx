@@ -29,14 +29,14 @@ export function StarField() {
       };
     };
 
-    const rng = seedRandom("samiksha-birthday-night-garden");
+    const rng = seedRandom("trasha-birthday-night-garden");
 
     for (let i = 0; i < 140; i++) {
       starList.push({
         id: i,
-        x: rng() * 100, 
-        y: rng() * 100, 
-        size: rng() * 1.8 + 0.8, 
+        x: rng() * 100,
+        y: rng() * 100,
+        size: rng() * 1.8 + 0.8,
         delay: rng() * 6,
         duration: rng() * 4 + 3,
       });

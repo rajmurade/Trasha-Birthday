@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "A Moonlight Garden for Samiksha",
-  description: "A magical interactive cinematic experience created with love for Samiksha's birthday.",
+  title: "A Moonlight Garden for Trasha",
+  description: "A magical interactive cinematic experience created with love for Trasha's birthday.",
 };
 
 export default function RootLayout({

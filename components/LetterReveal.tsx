@@ -59,7 +59,7 @@ export function LetterReveal({ onClose }: LetterRevealProps) {
           className="max-h-[60vh] overflow-y-auto pr-4 text-garden-text space-y-6 md:space-y-7 text-sm md:text-base leading-relaxed font-serif tracking-wide select-text"
         >
           <h2 className="reveal-p text-xl md:text-2xl font-semibold text-white tracking-wide border-b border-white/10 pb-4">
-            For Samiksha,
+            For Trasha,
           </h2>
 
           <p className="reveal-p text-garden-accent">
@@ -118,14 +118,14 @@ export function LetterReveal({ onClose }: LetterRevealProps) {
           </p>
 
           <p className="reveal-p text-xl font-medium pt-4 text-white">
-            Happy Birthday, Samiksha.
+            Happy Birthday, Trasha.
           </p>
 
           <div className="reveal-p pt-4 border-t border-white/10 flex flex-col items-end">
             <span className="text-xs uppercase tracking-widest text-garden-glowSecondary">
               With love,
             </span>
-            <span className="text-lg font-semibold text-white mt-1">Raj</span>
+            <span className="text-lg font-semibold text-white mt-1">Rishi</span>
           </div>
         </div>
 
